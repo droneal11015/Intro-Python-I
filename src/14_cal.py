@@ -22,15 +22,3 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
-
-month = datetime.now().month 
-year = datetime.now().year
-
-if (len(sys.argv) == 1): 
-  print(calendar.month(year, month))
-elif(len(sys.argv) == 2): 
-  print(calendar.month(year, int(sys.argv[1])))
-elif(len(sys.argv) == 3):
-  print(calendar.month(int(sys.argv[2]), int(sys.argv[1])))
-else: 
-  print("Please enter a year and month.")
